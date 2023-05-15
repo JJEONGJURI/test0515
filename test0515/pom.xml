@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+ 	<spring.version>5.3.20</spring.version>
   </properties>
 
   <dependencies>
@@ -21,10 +22,20 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-    	<groupId>gdu.kr</groupId>
-    	<artifactId>chap2</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
-    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>${spring.version}</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
+<dependency>
+    <groupId>org.mariadb.jdbc</groupId>
+    <artifactId>mariadb-java-client</artifactId>
+    <version>2.7.3</version>
+</dependency>
+
   </dependencies>
+  
 </project>
